@@ -1,0 +1,42 @@
+body {
+    color: #333333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+footer{
+    background: bisque;
+    color: yellowgreen;
+    padding: 0 15px;
+    margin: 5px;
+}
+
+header{
+    background: wheat;
+    margin: 5px;
+    padding: 0 5px;
+}
+
+header a{
+    color: tomato;
+    margin-right: 5px;
+    text-decoration-thickness: 2px;
+}
+.portrait{
+    border-color:tomato ;
+    border-width: 2px ;
+    width: 500px;
+}
+input{
+    border: 1px solid salmon;
+    padding: 5px;
+}
+button{
+    cursor: pointer;
+    border: 1px solid salmon;
+    background: salmon;
+    padding: 5px; 
+
+}
