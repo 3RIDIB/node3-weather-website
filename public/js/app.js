@@ -23,7 +23,7 @@ weatherForm.addEventListener('submit', (event) => {
     // console.log('Testing - form submitted.')
     let address = search.value
     // console.log(address)
-    const url = 'http://localhost:3000/weather?address=' + address
+    const url = '/weather?address=' + address
     // console.log(url)
     // console.log('http://localhost:3000/weather?address=kolkata')
     message1.textContent = 'Loading...'
