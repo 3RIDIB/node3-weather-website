@@ -28,10 +28,13 @@ const forecast = (place,longitude, latitude, callback) => {
                 callback('Unable to find location!! Try another Location!!')
             }else{
                 const data = 'It is currently ' + response.body.current.temp + ' degrees out. There is a ' + response.body.current.uvi + ' % chance of rain.'
+                //console.log("body", response.body)
                 const data2 = {
                     Temparature: response.body.current.temp,
                     precipitation: response.body.current.uvi,
-                    Address: place
+                    Address: place,
+                    feels_like: response.body.current.feels_like,
+                    wind_speed: response.body.current.wind_speed
                 }
                 //console.log(data2)
                 callback(undefined, data2)

@@ -73,11 +73,13 @@ app.get('/weather', (req,res) => {
                 })
             }
             // console.log('Error : ', error)
-            //console.log('Data : ', data)
+            console.log('Data : ', data)
             res.send({
                 Temparature:data.Temparature,
                 Rain_Precipitation : data.precipitation,
-                Address: data.Address
+                Address: data.Address,
+                Feels_like:data.feels_like,
+                Wind_speed:data.wind_speed
             })
           }) 
     })

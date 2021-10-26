@@ -15,6 +15,8 @@ let search = document.querySelector('input')
 const message1 = document.querySelector('#message-1')
 const message2 = document.querySelector('#message-2')
 const message3 = document.querySelector('#message-3')
+const message4 = document.querySelector('#message-4')
+const message5 = document.querySelector('#message-5')
 
 //message1.textContent = 'Response'
 
@@ -45,6 +47,10 @@ weatherForm.addEventListener('submit', (event) => {
             message2.textContent = 'Rain Precipitation: '+ data.Rain_Precipitation
             console.log('Location: ' + data.Address)
             message3.textContent = 'Location: ' + data.Address
+            console.log('Feels_like ' + data.Feels_like)
+            message4.textContent = 'Feels_like: ' + data.Feels_like
+            console.log('wind_speed: ' + data.Wind_speed)
+            message5.textContent = 'wind_speed: ' + data.Wind_speed
         }
     })
 })
